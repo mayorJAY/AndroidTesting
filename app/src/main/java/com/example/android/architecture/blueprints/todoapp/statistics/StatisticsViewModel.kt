@@ -33,7 +33,6 @@ import kotlinx.coroutines.launch
  */
 class StatisticsViewModel(private val tasksRepository: TasksRepository) : ViewModel() {
 
-
     private val tasks: LiveData<Result<List<Task>>> = tasksRepository.observeTasks()
     private val _dataLoading = MutableLiveData<Boolean>(false)
     private val stats: LiveData<StatsResult?> = tasks.map {
