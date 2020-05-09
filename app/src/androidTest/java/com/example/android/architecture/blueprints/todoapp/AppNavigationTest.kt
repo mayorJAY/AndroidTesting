@@ -91,7 +91,7 @@ class AppNavigationTest {
         dataBindingIdlingResource.monitorActivity(activityScenario)
 
         // 1. Click on the task on the list.
-        onView(ViewMatchers.withText("Up button")).perform(click())
+        onView(withText("Up button")).perform(click())
 
         // 2. Click on the edit task button.
         onView(withId(R.id.edit_task_fab)).perform(click())
@@ -121,7 +121,7 @@ class AppNavigationTest {
         dataBindingIdlingResource.monitorActivity(activityScenario)
 
         // 1. Click on the task on the list.
-        onView(ViewMatchers.withText("Back button")).perform(click())
+        onView(withText("Back button")).perform(click())
 
         // 2. Click on the edit task button.
         onView(withId(R.id.edit_task_fab)).perform(click())
